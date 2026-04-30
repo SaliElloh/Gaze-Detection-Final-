@@ -51,8 +51,6 @@ night_cloudy_downtown =  'fatigue_detection/test_data/night_cloudy_downtown.avi'
 
 # initialize timestamp
 timestamp = 0
-fps = 30
-time_increment = 1/fps
 
 
 FPS_START_TIME = time.time()
@@ -221,7 +219,7 @@ def main():
             # Create a list of active event types
             active_event_types = [event_type for event_type in ['saccade', 'fixation', 'blink'] if eval(event_type)]
 
-            # timestamp += time_increment
+            # timestamp += TIME_INCREMENT
             # timestamp = np.around(timestamp, decimals=2)
             
             preprocess_weather = preprocess_weather_label(LAST_PREDICTED_WEATHER_CLASSES)

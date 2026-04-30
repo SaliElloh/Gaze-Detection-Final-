@@ -32,6 +32,7 @@ FPS = 30
 TIME_INCREMENT = 1 / FPS
 PROCESS_EVERY_N_FRAMES = 10
 WEATHER_PREDICTION_THRESHOLD = 0.5
+FRAME_COUNT = 0
 WEATHER_CLASSES = ['Cloudy', 'Countryside', 'Downtown', 'Evening', 'Highway', 'Morning', 'Night', 'Rainy', 'Sunny']
 
 # Weather frame count
@@ -55,10 +56,7 @@ time_increment = 1/fps
 
 
 FPS_START_TIME = time.time()
-FRAME_COUNT = 0
-PROCESS_EVERY_N_FRAMES = 10
 LAST_PREDICTED_WEATHER_CLASSES = []
-WEATHER_PREDICTION_THRESHOLD = 0.5
 
 
 def main():
